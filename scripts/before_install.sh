@@ -6,6 +6,7 @@ apt-get update
 apt-get install -y python3-pip python3-venv
 
 apt-get install -y nginx
+pip install gunicorn
 
 # Remove existing contents of the NGINX default file
 sudo truncate -s 0 /etc/nginx/sites-available/default
