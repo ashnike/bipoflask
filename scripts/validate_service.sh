@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd /home/ubuntu/app
 # Example: Check if Flask app is running
 if pgrep -f "python app.py" > /dev/null
 then
