@@ -1,1 +1,23 @@
-
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/
+    overwrite: true
+file_exists_behavior: OVERWRITE
+hooks:
+  BeforeInstall:
+    - location: scripts/before_install.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/app_start.sh
+      timeout: 300
+      runas: root
+  ValidateService:
+    - location: scripts/validate_service.sh
+      runas: root
