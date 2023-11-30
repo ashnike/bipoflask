@@ -1,5 +1,6 @@
 #!/bin/bash
 
 # Copy static files to the deployment directory
-cp -r /home/ubuntu/bipoflask* /var/www/html/
+cd /home/ubuntu/bipoflask
+pip install -r requirements.txt
 # Optionally, set appropriate permissions or configurations for serving static content
