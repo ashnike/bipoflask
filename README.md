@@ -1,5 +1,5 @@
 # Continuous Integration and Deployment of Flask App using AWS CodePipeline
-
+## appurl: http://bipolar-lb-1021215582.ap-south-1.elb.amazonaws.com/
 This project demonstrates the utilization of AWS CodePipeline for continuous integration and deployment of a Flask application.
 
 ## Files Included:
